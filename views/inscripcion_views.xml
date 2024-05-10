@@ -32,7 +32,7 @@
             <field name="res_model">aden.inscripcion</field>
             <field name="view_mode">tree,form</field>
         </record>
-<!-- Menúes -->
+<!-- Menus -->
         <!-- Barra de menús -->
         <menuitem name="Inscripciones" id="menu_inscripciones" parent="aden_menu_root"/>
         <!-- Submenus -->

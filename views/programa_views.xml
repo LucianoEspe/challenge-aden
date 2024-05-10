@@ -38,7 +38,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-<!-- Menúes -->
+<!-- Menus -->
         <!-- Barra de menús -->
         <menuitem name="Programas" id="menu_programas" parent="aden_menu_root"/>
 

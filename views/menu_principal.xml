@@ -1,5 +1,6 @@
 <odoo>
   <data>
+    <!-- Menú principal -->
     <menuitem name="Aden" id="aden_menu_root"/>
   </data>
 </odoo>
