@@ -2,14 +2,15 @@
 ## Consigna
 Crear un módulo de Odoo versión 15 o superior que cumpla con lo siguiente:
 Modelo Alumno que contenga los siguientes datos:
-    - Nombre
-    - Apellido
-    - Fecha de nacimiento
-    - Nro de legajo
-    - Email
-    - Teléfono
-    - Dirección
-    - País
+
+- Nombre
+- Apellido
+- Fecha de nacimiento
+- Nro de legajo
+- Email
+- Teléfono
+- Dirección
+- País
 
 Modelo Programa que contenga nombre y descripción
 
