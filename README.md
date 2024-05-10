@@ -1,7 +1,7 @@
 # Challenge Aden
 ## Consigna
 Crear un módulo de Odoo versión 15 o superior que cumpla con lo siguiente:
-### Modelo Alumno que contenga los siguientes datos:
+Modelo Alumno que contenga los siguientes datos:
     - Nombre
     - Apellido
     - Fecha de nacimiento
@@ -10,9 +10,12 @@ Crear un módulo de Odoo versión 15 o superior que cumpla con lo siguiente:
     - Teléfono
     - Dirección
     - País
-### Modelo Programa que contenga nombre y descripción
-### Modelo Inscripción que permita registrar que un alumno está inscrito a un programa
-### Controlador : a través del mismo, un endpoint de método GET, que reciba un id de
+
+Modelo Programa que contenga nombre y descripción
+
+Modelo Inscripción que permita registrar que un alumno está inscrito a un programa
+
+Controlador : a través del mismo, un endpoint de método GET, que reciba un id de
 programa y retorne la lista de todos los alumnos que están inscriptos en el
 programa. Ejemplo de respuesta:
 ```json
