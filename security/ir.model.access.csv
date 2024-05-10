@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_aden_alumno,aden.alumno,model_aden_alumno,base.group_user,1,1,1,1
+access_aden_programa,aden.programa,model_aden_programa,base.group_user,1,1,1,1
+access_aden_inscripcion,aden.inscripcion,model_aden_inscripcion,base.group_user,1,1,1,1

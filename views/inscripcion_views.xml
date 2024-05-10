@@ -1,0 +1,43 @@
+<odoo>
+    <data>
+<!-- Vista de lista -->    
+        <record model="ir.ui.view" id="view_inscripcion_list">
+            <field name="name">Lista de Inscripciones</field>
+            <field name="model">aden.inscripcion</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="alumno_id"/>
+                    <field name="programa_id"/>
+                </tree>
+            </field>
+        </record>
+
+<!-- Vista de formulario -->
+        <record model="ir.ui.view" id="view_inscripcion_form">
+            <field name="name">Formulario de inscripciones</field>
+            <field name="model">aden.inscripcion</field>
+            <field name="arch" type="xml">
+                <form string="Programa">
+                <sheet>
+                    <field name="alumno_id" placeholder="Alumno"/>
+                    <field name="programa_id" placeholder="Programa"/>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+<!-- Acciones -->
+        <record model="ir.actions.act_window" id="inscripcion_act_ventana">
+            <field name="name">Lista de inscripciones</field>
+            <field name="res_model">aden.inscripcion</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+<!-- Menúes -->
+        <!-- Barra de menús -->
+        <menuitem name="Inscripciones" id="menu_inscripciones" parent="aden_menu_root"/>
+        <!-- Submenus -->
+        <menuitem name="Ver inscripciones" id="menu_inscripciones_lista" parent="menu_inscripciones"
+                action="inscripcion_act_ventana"/>
+
+    </data>
+</odoo>

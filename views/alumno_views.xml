@@ -1,0 +1,69 @@
+<odoo>
+    <data>
+<!-- Vista de lista -->
+        <record model="ir.ui.view" id="view_alumno_list">
+            <field name="name">Lista de Alumnos</field>
+            <field name="model">aden.alumno</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nombre"/>
+                    <field name="apellido"/>
+                    <field name="nacimiento"/>
+                    <field name="legajo"/>
+                    <field name="email"/>
+                    <field name="telefono"/>
+                    <field name="direccion"/>
+                    <field name="pais"/>
+                </tree>
+            </field>
+        </record>
+
+
+<!-- Vista de formulario -->
+        <record model="ir.ui.view" id="view_alumno_form">
+            <field name="name">Formulario de alumnos</field>
+            <field name="model">aden.alumno</field>
+            <field name="arch" type="xml">
+                <form string="Alumno">
+                <sheet>
+                    <div class="o_form_label"><b>Información personal</b></div>
+                    <group>
+                        <group>
+                            <field name="nombre"/>
+                            <field name="apellido"/>
+                            <field name="nacimiento"/>
+                        </group>
+                        <group>
+                            <field name="pais"/>
+                            <field name="legajo"/>
+                            <field name="direccion"/>
+                        </group>
+                    </group>
+                    <div class="o_form_label"><b>Contacto</b></div>
+                    <group>
+                        <field name="email"/>
+                        <field name="telefono"/>
+                    </group>
+                </sheet>
+                </form>
+            </field>
+        </record>
+
+<!-- Acciones -->
+        <record model="ir.actions.act_window" id="alumno_act_ventana">
+            <field name="name">Lista de alumnos</field>
+            <field name="res_model">aden.alumno</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+<!-- Menus -->
+        <!-- Barra del menú-->
+
+        <menuitem name="Alumnos" id="menu_alumnos" parent="aden_menu_root"/>
+
+        <!-- Submenus -->
+
+        <menuitem name="Ver alumnos" id="menu_alumnos_lista" parent="menu_alumnos"
+                action="alumno_act_ventana"/>
+    </data>
+</odoo>
