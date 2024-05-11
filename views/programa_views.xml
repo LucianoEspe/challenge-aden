@@ -21,14 +21,16 @@
             <field name="model">aden.programa</field>
             <field name="arch" type="xml">
                 <form string="Programa">
-                <sheet>
-                    <field name="nombre" placeholder="Nombre del programa"/>
-                    <field name="descripcion" placeholder="Descripcion"/>
-                </sheet>
+                    <sheet>
+                        <label for="nombre" string='Nombre'/>
+                        <field name="nombre"/>
+                        <br></br>
+                        <label for="descripcion" string='Descripción'/>
+                        <field name="descripcion"/>
+                    </sheet>
                 </form>
             </field>
         </record>
-<!-- Uso placeholder porque no me está mostrando los nombres de los campos-->
 
 
 <!-- Acciones -->
