@@ -19,8 +19,10 @@
             <field name="arch" type="xml">
                 <form string="Programa">
                 <sheet>
-                    <field name="alumno_id" placeholder="Alumno"/>
-                    <field name="programa_id" placeholder="Programa"/>
+                    <label for="alumno_id" string='Alumno'/>
+                    <field name="alumno_id"/>
+                    <div class="o_form_label"><b>Seleccione los programas</b></div>
+                    <field name="programa_id"/>
                 </sheet>
                 </form>
             </field>
