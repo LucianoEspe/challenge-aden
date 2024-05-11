@@ -25,26 +25,26 @@
             <field name="model">aden.alumno</field>
             <field name="arch" type="xml">
                 <form string="Alumno">
-                <sheet>
-                    <div class="o_form_label"><b>Información personal</b></div>
-                    <group>
+                    <sheet>
+                        <div class="o_form_label"><b>Información personal</b></div>
                         <group>
-                            <field name="nombre"/>
-                            <field name="apellido"/>
-                            <field name="nacimiento"/>
+                            <group>
+                                <field name="nombre"/>
+                                <field name="apellido"/>
+                                <field name="nacimiento"/>
+                            </group>
+                            <group>
+                                <field name="pais"/>
+                                <field name="legajo"/>
+                                <field name="direccion"/>
+                            </group>
                         </group>
+                        <div class="o_form_label"><b>Contacto</b></div>
                         <group>
-                            <field name="pais"/>
-                            <field name="legajo"/>
-                            <field name="direccion"/>
+                            <field name="email"/>
+                            <field name="telefono"/>
                         </group>
-                    </group>
-                    <div class="o_form_label"><b>Contacto</b></div>
-                    <group>
-                        <field name="email"/>
-                        <field name="telefono"/>
-                    </group>
-                </sheet>
+                    </sheet>
                 </form>
             </field>
         </record>
